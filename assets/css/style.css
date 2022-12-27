@@ -45,7 +45,13 @@ h3 {
 
 .LogOut {
   margin-right: 3rem;
-  background-color: red;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.ContentLog a {
+  color: white;
+  text-decoration: none;
 }
 .logOut a {
   color: white;
@@ -179,14 +185,36 @@ span {
 .contentRight {
   height: 45vw;
 }
-.calendar {
+.calendarContainer {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.096) 1px 1px 1px 1px;
   width: 80vh;
-  height: 25vw;
   border-radius: 5px;
   margin-top: 5vh;
   margin-left: 15px;
+  overflow: hidden;
+}
+.calendar {
+  padding: 5px;
+}
+
+.month-container {
+  background-color: rgb(255, 255, 255);
+}
+
+.year-title {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.month-title {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.day-header {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.day-content {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 span #calendarTitle {
@@ -358,8 +386,8 @@ article button:hover {
 .customer {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.096) 1px 1px 1px 1px;
-  width: 99%;
-  height: 14.5vw;
+  width: auto;
+  height: auto;
   border-radius: 5px;
   margin-top: 1vh;
   margin-left: 15px;
@@ -577,8 +605,25 @@ h5 {
   background: #f1f1f1;
   color: #333;
 }
+.dropzone {
+  width: 90%;
+  height: 40vw;
+  border-radius: 5px;
+  margin-top: 5vh;
+  margin-left: 15px;
+  background: rgb(255, 255, 255);
+}
 
-/*@media (prefers-color-scheme: light) {
+.dropzone.dragover {
+  background-color: rgb(207, 207, 207);
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+/*
+@media (prefers-color-scheme: light) {
   body {
     background-color: #fff;
     color: #333;
@@ -586,8 +631,8 @@ h5 {
   h1 {
     color: black;
   }
-}*/
-/*@media (prefers-color-scheme: dark) {
+}
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #333;
     color: #f1f1f1;

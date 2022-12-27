@@ -1,17 +1,4 @@
-const btnToggle = document.querySelector("#switch");
-
-btnToggle.addEventListener("click", () => {
-  const body = document.body;
-
-  if (body.classList.contains("dark")) {
-    body.classList.add("light");
-    body.classList.remove("dark");
-  } else if (body.classList.contains("light")) {
-    body.classList.add("dark");
-    body.classList.remove("light");
-  }
-});
-
+//Modal1
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
 
@@ -23,6 +10,7 @@ function toggleModal() {
   modalContainer.classList.toggle("active");
 }
 
+//Modal2
 const modalContainerPhone = document.querySelector(".modal-containerPhone");
 const modalTriggersPhone = document.querySelectorAll(".modal-triggerPhone ");
 
@@ -34,6 +22,7 @@ function toggleModalPhone() {
   modalContainerPhone.classList.toggle("active");
 }
 
+//Modal3
 const modalContainerTime = document.querySelector(".modal-containerTime");
 const modalTriggersTime = document.querySelectorAll(".modal-triggerTime");
 
