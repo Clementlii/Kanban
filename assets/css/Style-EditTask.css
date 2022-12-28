@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Rubik", sans-serif;
+}
+
+nav {
+	padding: 10px;
+	box-shadow: rgba(26, 26, 26, 0.208) 1px 0px 10px 1px;
+}
+
+.contain {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main {
+	width: 60%;
+	height: auto;
+	margin: auto;
+	margin-top: 15vh;
+}
+#ContainBackTask button {
+	color: white;
+	text-decoration: none;
+	background-color: #f4511e;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 5px;
+	align-self: flex-end;
+	border-radius: 4px;
+	font-family: "Roboto Condensed", sans-serif;
+}
+#ContainBackTask a {
+	text-decoration: none;
+	color: white;
+}
+#ContainBackTask button:hover {
+	background-color: #d2451b;
+}
+
+h1 {
+	font-size: 30px;
+}
+p {
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+input {
+	background: #e4e4e4;
+	border: none;
+	width: 400px;
+	height: 40px;
+}
+
+#APPLY {
+	width: 100px;
+	height: 50px;
+	border: none;
+	background: #61b98f;
+	color: white;
+}
+
+#DEL {
+	width: 100px;
+	height: 50px;
+	border: none;
+	background: #e90303;
+	color: white;
+}
+
+#DEL a {
+	text-decoration: none;
+	color: white;
+}
+
+#DEL:hover {
+	background: #bc0303;
+}
+#APPLY:hover {
+	background: #529d79;
+}
+.Colaborator {
+	margin-top: 2vw;
+}
+.validation {
+	justify-content: flex-end;
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #fff;
+		color: #333;
+	}
+	h1 {
+		color: black;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #333;
+		color: #f1f1f1;
+	}
+	h1 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+}
