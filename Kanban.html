@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css"
+    />
     <title>Adminer</title>
   </head>
   <body class="light">
@@ -55,127 +60,63 @@
 
     <header>
       <nav>
-        <h1>TICKETS MANAGER</h1>
+        <h1>CUSTOMER NAME</h1>
         <div class="set">
-          <butn class="logOut"><a href="./index.html">EXIT</a></butn>
+          <button class="logOut"><a href="#">ADD TASK</a></button>
+          <button class="logOut">
+            <a href="./customerchoice.html">EXIT</a>
+          </button>
         </div>
       </nav>
     </header>
 
     <section id="BigContent">
-      <div class="KanbanContain">
+      <div class="KanbanContain dropzone">
         <h1 class="light">Future task :</h1>
-        <div class="BulletPoints">
-          <button class="tag">Statut</button>
+        <!--Task1-->
+        <div class="BulletPoints" id="draggable" draggable="true">
+          <button class="tag">UI/UX Design</button>
           <button class="tag3">Statut</button>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
+          <p>Inérvenant : employee's name</p>
+          <p>Mission : UX research</p>
         </div>
-        <div class="BulletPoints">
-          <button class="tag">Statut</button>
+        <!--Task2-->
+        <div class="BulletPoints" id="draggable2" draggable="true">
+          <button class="tag">Dec</button>
           <button class="tag3">Statut</button>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
+          <p>Player audio</p>
         </div>
-        <div class="BulletPoints">
+        <!--Task3-->
+        <div class="BulletPoints" id="draggable3" draggable="true">
           <button class="tag">Statut</button>
           <button class="tag3">Statut</button>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
+          <p>Complet modal</p>
         </div>
-        <div class="BulletPoints light">
+        <!--Task4-->
+        <div class="BulletPoints" id="draggable4" draggable="true">
           <button class="tag">Statut</button>
           <button class="tag3">Statut</button>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
+          <p>Design</p>
         </div>
 
         <div class="CurentTask"></div>
 
         <div class="RigthColumn">
-          <div class="Calendar"></div>
           <div class="Customer"></div>
         </div>
       </div>
 
-      <div class="KanbanContain light">
+      <!--TaskEnd-->
+
+      <div class="KanbanContain dropzone" id="droptarget">
         <h1>Task end :</h1>
-        <div class="BulletPoints">
-          <button class="tag">Statut</button>
-          <button class="tag2">Statut : OK</button>
-
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
-        </div>
-        <div class="BulletPoints">
-          <button class="tag">Statut</button>
-          <button class="tag2">Statut : OK</button>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
-        </div>
-        <div class="BulletPoints light">
-          <button class="tag">Statut</button>
-          <button class="tag2">Statut : OK</button>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
-        </div>
-        <div class="BulletPoints">
-          <button class="tag">Statut</button>
-          <button class="tag2">Statu : OK</button>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea
-            laudantium quos voluptates voluptas natus delectus, voluptate
-            repellendus odit? Cumque ratione assumenda at earum, eaque eligendi
-            exercitationem asperiores nemo esse!
-          </p>
-        </div>
-
-        <div class="CurentTask"></div>
-
-        <div class="RigthColumn">
-          <div class="Calendar"></div>
-          <div class="Customer"></div>
-        </div>
       </div>
+
+      <!--CalendarSection-->
 
       <div class="contentRight">
-        <div class="calendar">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=clement.ckelouf%40gmail.com&ctz=Europe%2FParis"
-            style="border: 0"
-            width="95%"
-            height="95%"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
+        <div class="calendarContainer">
+          <div class="calendar"></div>
         </div>
         <div class="customer">
           <div class="loc light">
@@ -196,5 +137,17 @@
     </section>
 
     <script src="./assets/js/style.js"></script>
+    <!--<script src="./assets/js/darkmod.js"></script>-->
+    <script src="./assets/js/dragJS/drag.js"></script>
+    <script src="./assets/js/dragg.js"></script>
+    <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+    <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.umd.min.js"></script>
+    <script src="https://unpkg.com/js-year-calendar@latest/locales/js-year-calendar.fr.js"></script>
+    <script>
+      var element = document.querySelector(".calendar");
+      new Calendar(element, {
+        language: "fr",
+      });
+    </script>
   </body>
 </html>
