@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="./assets/css/Style-EditTask.css" />
-		<title>Ajouter une tache</title>
-	</head>
-	<body>
-		<nav>
-			<header id="ContainBackTask">
-				<button><a href="./Kanban.html">BACK</a></button>
-			</header>
-		</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/Style-EditTask.css" />
+    <title>Ajouter une tache</title>
+  </head>
+  <body>
+    <nav>
+      <header id="ContainBackTask">
+        <button><a href="./Kanban.html">BACK</a></button>
+      </header>
+    </nav>
 
-		<main>
-			<section class="contain">
-				<div class="AddTaskContainer">
-					<h1>EDIT TASK</h1>
-					<div class="Name">
-						<p>Task name</p>
-						<input type="text" placeholder="name" />
-					</div>
-					<div class="Activity">
-						<p>field of activity</p>
-						<input type="text" />
-					</div>
-				</div>
+    <main>
+      <section class="contain">
+        <div class="AddTaskContainer">
+          <h1>EDIT PROJECT</h1>
+          <div class="Name">
+            <p>Project name</p>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="Activity">
+            <p>field of activity</p>
+            <input type="text" placeholder="Domain" />
+          </div>
+        </div>
 
-				<div class="Colaborator">
-					<div class="Actor">
-						<p>Colaborator</p>
-						<input type="text" />
-					</div>
+        <div class="Colaborator">
+          <div class="Actor">
+            <p>Colaborator</p>
+            <input type="text" placeholder="Colaborator name" />
+          </div>
 
-					<div class="description">
-						<p>Add description</p>
-						<textarea name="description" id="descTask" cols="55" rows="10"></textarea>
-					</div>
-					<div class="validation">
-						<button id="DEL"><a href="">DELET</a></button>
-						<button id="APPLY"><a href=""></a>APPLY</button>
-					</div>
-				</div>
-			</section>
-		</main>
-	</body>
+          <div class="description">
+            <p>Add description</p>
+            <textarea
+              name="description"
+              id="descTask"
+              cols="55"
+              rows="10"
+              placeholder="Project description"
+            ></textarea>
+          </div>
+          <div class="validation">
+            <button id="DEL"><a href="">DELET</a></button>
+            <button id="APPLY"><a href=""></a>APPLY</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

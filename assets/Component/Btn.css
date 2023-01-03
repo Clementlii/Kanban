@@ -1,0 +1,46 @@
+.tag {
+  background-color: #c92a2a;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.tag2 {
+  background-color: #38a849;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.tag3 {
+  background-color: #2b8d7d;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.tagUIUX {
+  background-color: #c73561;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
